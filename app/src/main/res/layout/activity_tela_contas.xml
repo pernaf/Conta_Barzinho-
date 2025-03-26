@@ -48,7 +48,7 @@
             android:id="@+id/edittx_valorcerva"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="10,00"
+            android:hint=""
             android:inputType="numberDecimal"
             android:maxLength="5"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
-            android:hint="5" />
+            android:hint="" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -124,7 +124,7 @@
             android:layout_height="match_parent"
             android:inputType="numberDecimal"
             android:maxLength="5"
-            android:hint="5,00" />
+            android:hint="" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -170,7 +170,7 @@
             android:layout_height="match_parent"
             android:inputType="numberDecimal"
             android:maxLength="5"
-            android:hint="20,00" />
+            android:hint="" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ProgressBar
@@ -211,7 +211,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
-            android:hint="5" />
+            android:hint="" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioButton
@@ -269,6 +269,7 @@
         android:id="@+id/tv_textoresultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="O valor a ser pago será:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -281,6 +282,8 @@
         android:layout_margin="16dp"
         android:textAlignment="center"
         android:text="R$ 0,00"
+        android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_textoresultado" />
