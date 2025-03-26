@@ -48,7 +48,7 @@ class TelaContas : AppCompatActivity() {
                 Snackbar
                     .make(
                         binding.edittxValorcerva,
-                        "Preencha todos os campos",
+                        "Preencha o campo vazio com 0",
                         Snackbar.LENGTH_LONG
                     ).show()
 
@@ -66,12 +66,28 @@ class TelaContas : AppCompatActivity() {
 
                 val totalComGorjeta = contaTotal + (contaTotal * percentage / 100)
 
+                val semGorjetaPessoa = if (nPessoas > 0) contaTotal / nPessoas else contaTotal
                 val porPessoa = if (nPessoas > 0) totalComGorjeta / nPessoas else totalComGorjeta
 
+
+                binding.tvResultado.text = formatarMoeda(semGorjetaPessoa.toDouble())
                 binding.tvResultado.text = formatarMoeda(porPessoa.toDouble())
 
 
             }
+
+        }
+
+        binding.btnLimpar.setOnClickListener {
+
+            binding.edittxValorcerva.setText("")
+            binding.edittxtQtdcerva.setText("")
+            binding.edttextValornaoalcool.setText("")
+            binding.edttextValorTiragosto.setText("")
+            binding.edttextNpessoas.setText("")
+            binding.radioButtonGorjeta.isChecked = false
+            binding.tvResultado.text = "R$ 0,00"
+
 
         }
 

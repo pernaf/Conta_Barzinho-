@@ -27,9 +27,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="350dp"
+        android:layout_marginEnd="340dp"
         android:layout_marginStart="16dp"
-        android:text="Valor"
+        android:text="Valor R$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cerva" />
@@ -42,13 +42,14 @@
         android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:hintEnabled= "false"
         app:layout_constraintTop_toBottomOf="@+id/tv_cerva">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edittx_valorcerva"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint=""
+            android:hint="R$ 0,00"
             android:inputType="numberDecimal"
             android:maxLength="5"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -100,9 +101,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:layout_marginEnd="350dp"
+        android:layout_marginEnd="340dp"
         android:layout_marginStart="16dp"
-        android:text="Valor"
+        android:text="Valor R$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_naoalcoolicas" />
@@ -111,9 +112,10 @@
         android:id="@+id/inpt_valor_naoalcool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="4dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="50dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_naoalcoolicas">
@@ -124,7 +126,7 @@
             android:layout_height="match_parent"
             android:inputType="numberDecimal"
             android:maxLength="5"
-            android:hint="" />
+            android:hint="R$ 0,00" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -145,7 +147,7 @@
         android:id="@+id/tv_valor_tiragosto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Valor"
+        android:text="Valor R$"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="300dp"
         android:layout_marginStart="16dp"
@@ -160,6 +162,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="50dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_tiragosto">
@@ -170,7 +173,7 @@
             android:layout_height="match_parent"
             android:inputType="numberDecimal"
             android:maxLength="5"
-            android:hint="" />
+            android:hint="R$ 0,00" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ProgressBar
