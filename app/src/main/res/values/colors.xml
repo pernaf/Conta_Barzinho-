@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="vermelhopitu">#E30613</color>
+    <color name="amarelopitu">#FFC000 </color>
+    <color name="mostarda">#D4A017</color>
+    <color name="vermelhoclaro">#FF6666</color>
 </resources>
