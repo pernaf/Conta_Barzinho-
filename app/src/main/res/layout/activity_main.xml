@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/vermelhoclaro"
+    android:background="@drawable/cerva_4"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:text="Conta de Barzinho"
-        android:fontFamily="@font/londrina_solid_light"
+        android:fontFamily="@font/adlam_display"
         android:textSize="42sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -30,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Iniciar"
+        android:fontFamily="@font/adlam_display"
         android:textSize="16sp"
         android:textColor="@color/white"
         android:backgroundTint="@color/black"
@@ -42,28 +43,18 @@
         android:id="@+id/tv_subtitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="22dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:fontFamily="@font/londrina_solid_light"
+        android:fontFamily="@font/ar_one_sans"
         android:text="Não tenha mais medo de mesas grandes! Saiba quanto pagar da sua conta de maneira fácil e prática!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_subtitulo"
-        app:srcCompat="@drawable/mesa_plastica_vermelha" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
