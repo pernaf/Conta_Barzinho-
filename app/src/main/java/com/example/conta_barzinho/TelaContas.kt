@@ -87,6 +87,7 @@ class TelaContas : AppCompatActivity() {
             binding.edttextNpessoas.setText("")
             binding.radioButtonGorjeta.isChecked = false
             binding.tvResultado.text = "R$ 0,00"
+            percentage = 0
 
 
         }
